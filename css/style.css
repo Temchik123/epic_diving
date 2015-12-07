@@ -14,6 +14,18 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+
+
+
+
+/*----------------------------------------------------------------------------*\
+	Заметки,
+	Оставляем xs, sm, lg сетки, убираем md (992 по умолчанию)
+	Убрать все media для MD
+\*----------------------------------------------------------------------------*/
+
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1435,4 +1447,34 @@ address {
   .hidden-lg {
     display: none !important;
   }
+}
+
+
+
+
+
+
+
+.page-header-top{
+	min-height: 100px;
+}
+.nav-wrapper{
+	background-color:#ff0; 
+	}
+@media (min-width: 1200px){
+	.nav-wrapper{
+		position: absolute;
+		top:0;
+		left: 16.66666667%;
+		width: 815px;
+		}
+}
+
+.row{
+	font-size: 0;
+}
+.row>[clas*="col-"]{
+	float:none !important;
+	vertical-align: top;
+	font-size: 16px; 
 }
